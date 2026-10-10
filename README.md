@@ -8,18 +8,16 @@ Download and extract the [latest release](https://github.com/dmbane/phinger-curs
 
 ```sh
 mkdir -p ~/.local/share/icons
-wget -cO- https://github.com/dmcbane/phinger-cursors-gruvbox/releases/latest/download/phinger-cursors-gruvbox.tar.xz | tar xf - -C ~/.local/share/icons
+wget -cO- https://github.com/dmcbane/phinger-cursors-gruvbox/releases/latest/download/phinger-cursors-gruvbox.tar.xz | tar xJf - -C ~/.local/share/icons
 ```
 
 This installs the cursor theme for your current user. To install for all users, extract into `/usr/share/icons` instead.
 
 ```sh
-wget -cO- https://github.com/dmcbane/phinger-cursors-gruvbox/releases/latest/download/phinger-cursors-gruvbox.tar.xz | sudo tar xf - -C /usr/share/icons
+wget -cO- https://github.com/dmcbane/phinger-cursors-gruvbox/releases/latest/download/phinger-cursors-gruvbox.tar.xz | sudo tar xJf - -C /usr/share/icons
 ```
 
-
 `<original readme>`
-
 
 # Phinger Cursors
 
