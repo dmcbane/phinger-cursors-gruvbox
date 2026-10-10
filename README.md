@@ -1,3 +1,26 @@
+# Phinger Cursors GruvBox
+
+This fork of [Philipp Schaffrath's Phinger Cursors](https://github.com/phisch/phinger-cursors) changes the color palette to use the colors from [Pavel Pertsev's GruvBox Vim color scheme](https://github.com/morhetz/gruvbox). I have not created the packages, so you'll need to use the manual installation instructions adapted for this repository.
+
+### Manual Installation
+
+Download and extract the [latest release](https://github.com/dmbane/phinger-cursors-gruvbox/releases/latest/download/phinger-cursors-gruvbox.tar.xz) into the `~/.local/share/icons` directory.
+
+```sh
+mkdir -p ~/.local/share/icons
+wget -cO- https://github.com/dmcbane/phinger-cursors-gruvbox/releases/latest/download/phinger-cursors-gruvbox.tar.xz | tar xf - -C ~/.local/share/icons
+```
+
+This installs the cursor theme for your current user. To install for all users, extract into `/usr/share/icons` instead.
+
+```sh
+wget -cO- https://github.com/dmcbane/phinger-cursors-gruvbox/releases/latest/download/phinger-cursors-gruvbox.tar.xz | sudo tar xf - -C /usr/share/icons
+```
+
+
+`<original readme>`
+
+
 # Phinger Cursors
 
 Say hello to your new cursor theme. Phinger Cursors is most likely the most over engineered cursor theme out there.
@@ -114,7 +137,7 @@ Every cursor sprite is assembled from core parts. Changing one of those parts, w
 
 Each part is designed on a base grid of 24 and 32:
 
-![parts](assets/grid&#32;sizes.png)
+![parts](<assets/grid sizes.png>)
 
 which means will be pixel perfect for any reasonable size:
 
@@ -139,6 +162,7 @@ Phinger Cursors are built using my [Cursor Theme Builder](https://github.com/phi
 This repository contains [workflows](.github/workflows) to extract a cursor-theme.json and assets, and drafts a release with built cursor theme variants.
 
 ## License & Credits
+
 All assets, including the Figma document are licensed under the [CC-BY-SA-4.0 License](LICENSE).
 
 Although designed from scratch, Phinger Cursors drew inspiration from [capitaine-cursors](https://github.com/keeferrourke/capitaine-cursors), which is based on the KDE Breeze cursors. So this is a special thanks to them, and all other amazing cursor themes out there!
